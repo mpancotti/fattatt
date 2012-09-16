@@ -87,10 +87,10 @@ Tabelle
  * vr_fr: String 4
  * tipo_documento: String
  * ancoco_fk: String 32
- * imponibile: Float
- * imposta: Float
- * sconto: Float
- * anticipo: Float
+ * imponibile: Decimal 11,2
+ * imposta: Decimal 11,2
+ * sconto: Decimal 11,2
+ * anticipo: Decimal 11,2
  * annotazioni: String 1024
  * contabilizzata: Boolean
  * confermata: Boolean
@@ -105,4 +105,17 @@ Tabelle
  * tipo_pagamento: String 8
  * cond_pagamento: String 8
  * numero_interno: String 32
-* RigaDattura
+* RigaFattura
+ * id: Serial PK
+ * testata_fk: Integer
+ * progr_riga: Serial
+ * codice_articolo: String 16
+ * descr_articolo: String 256
+ * prezzo_netto: Decimal 11,2
+ * quantita: Integer
+ * codice_iva: String 4
+ * sconto: Decimal 11,2
+ * imponibile_netto: Decimal 11,2
+ * sconto_netto: Decimal 11,2
+ * imponibile: Decimal 11,2
+ * iva: Decimal 11,2
