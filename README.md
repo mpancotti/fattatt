@@ -1,4 +1,11 @@
-fattatt
+Fatturazione attiva
 =======
 
-Gestione fatturazione attiva
+Tabelle
+* ACPM
+ * tbkey
+ * tbdati
+
+* ACTP
+ * tbkey
+ * tbdati
